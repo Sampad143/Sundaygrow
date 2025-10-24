@@ -1,1 +1,2 @@
 # Sundaygrow
+npm run dev
