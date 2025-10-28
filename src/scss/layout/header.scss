@@ -1,0 +1,258 @@
+// header scss
+
+// variables.scss path
+@use '../abstracts/variables' as var;
+@use '../abstracts/fontsFamily' as fonts;
+
+/* all element margin, padding remove */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* list clean */
+ul,
+ol {
+  list-style: none;
+}
+
+/* anchor tag clean */
+a {
+  text-decoration: none;
+}
+
+// header scss start
+.bg-custom {
+  background-color: #373737;
+  padding: 24px 0px;
+
+  .subscribe {
+    color: var.$secondary-color;
+    font-weight: var.$font-weight-bold;
+    font-size: var.$font-size-lg;
+    line-height: 20px;
+  }
+  .navbar-brand img {
+    width: 169px;
+    height: 55px;
+  }
+  .subscribe-item {
+    gap: 32px;
+  }
+
+  .header-btn {
+    background-color: var.$secondary-color;
+    color: var.$background-color;
+    font-family: fonts.$font-family-base;
+    width: 97px;
+    height: 48px;
+    padding: 0px 24px;
+    border-radius: 1000px;
+    font-size: var.$font-size-lg;
+    font-weight: var.$font-weight-bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    border: none;
+  }
+}
+
+// bannar scss start
+
+.banar {
+  background-image: url('../layout/bannar.png');
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0px auto;
+  height: 761px;
+  display: flex;
+
+  .bannar-content {
+    max-width: 946.85px;
+    margin-left: 40px;
+    margin-top: -200px;
+    h2 {
+      font-size: 61px;
+      font-weight: 800;
+      line-height: 68px;
+    }
+    .text-left {
+      margin-left: -20px;
+      font-size: 67px;
+    }
+    p {
+      font-size: 27px;
+      margin-top: 15px;
+      line-height: 36px;
+    }
+  }
+}
+
+// product scss start
+.custom-padding {
+  padding: 80px 0px;
+
+  .product-image img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+  }
+  h2 {
+    font-size: var.$font-size-base;
+    line-height: 52px;
+    font-weight: var.$font-weight-extrabold;
+  }
+  .product-left {
+    margin-right: 80px;
+  }
+  .product-right {
+    margin-left: 100px;
+  }
+  .product-right img {
+    width: 278.88px;
+    height: 109.8px;
+  }
+  .item-tow {
+    margin-top: -160px;
+  }
+}
+
+// Gallery scss start
+
+.gallery {
+  .small-images img {
+    width: 234px;
+    height: 228px;
+  }
+  .custom-gap {
+    gap: 36px;
+  }
+  .center-image img {
+    width: 904px;
+    height: 491px;
+  }
+}
+
+// favorite strain  scss start
+
+.gstrain-section {
+  h2 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: var.$font-weight-bold;
+    letter-spacing: -1%;
+  }
+  .custom-bg {
+    background-color: #373737;
+    padding: 20px 0px;
+    gap: 56px;
+  }
+  .coustom-width {
+    width: 70%;
+    margin: 0px auto;
+    p {
+      font-size: 21px;
+      line-height: 32px;
+      font-weight: var.$font-weight-medium;
+      margin-top: 40px;
+    }
+  }
+  .step-circle {
+    width: 72px;
+    height: 72px;
+    margin: auto;
+    border-radius: 50%;
+    font-weight: var.$font-weight-extrabold;
+    font-size: var.$font-size-base;
+  }
+}
+
+// order scss start
+.order-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: url('../layout/f3.jpg') no-repeat right center/cover;
+  height: 411px;
+  padding: 0 80px;
+
+  .order-content {
+    max-width: 400px;
+  }
+  h2 {
+    font-size: var.$font-size-base;
+    font-weight: var.$font-weight-extrabold;
+    line-height: 52px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: var.$font-weight-bold;
+  }
+}
+
+// advanced-tech scss start
+
+.advanced-tech {
+
+  h2{
+    font-size: var.$font-size-base;
+    font-weight: var.$font-weight-extrabold;
+    line-height: 52px;
+  }
+  .tech-card {
+    background-size: cover;
+    background-position: center;
+    padding: 1.5rem;
+    min-height: 250px;
+    position: relative;
+    transition: 0.3s;
+    color: #fff;
+    text-align: left;
+    h2{
+      font-size: 24px;
+      font-weight: var.$font-weight-bold;
+      line-height: 32px;
+    }
+    p{
+      font-size: 21px;
+      line-height: 32px;
+      font-weight: var.$font-weight-medium;
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+     margin-bottom: 25px;
+    }
+  }
+
+  // Background Images
+  .bg-led {
+    background-image: url("/public/images/bg-1.png");
+  }
+
+  .bg-climate {
+    background-image: url("/public/images/bg-2.png");
+  }
+
+  .bg-irrigation {
+    background-image: url("/public/images/bg-3.png");
+  }
+
+  .bg-app {
+    background-image: url("/public/images/bg-4.png");
+  }
+}

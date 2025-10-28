@@ -1,0 +1,20 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/fontsFamily' as fonts;
+
+
+.custom-btn {
+  background-color: var.$secondary-color;
+  color: var.$background-color;
+  font-family: fonts.$font-family-base;
+  width: 176px;
+  height: 48px;
+  padding: 0px 24px;
+  border-radius: 1000px;
+  font-size: var.$font-size-lg;
+  font-weight: var.$font-weight-bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  border: none;
+}

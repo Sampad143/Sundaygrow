@@ -1,0 +1,18 @@
+// variables.scss
+@use './fontsFamily.scss' as fonts;
+// Color Palette
+$primary-color: #ffffff;
+$secondary-color: #f4cc12;
+$background-color: #111111;
+
+// Typography
+$font-size-base: 47px;
+$font-size-sm: 21px;
+$font-size-lg: 16px;
+
+// Font Weights
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
