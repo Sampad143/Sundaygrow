@@ -1,5 +1,4 @@
 // header scss
-
 // variables.scss path
 @use '../abstracts/variables' as var;
 @use '../abstracts/fontsFamily' as fonts;
@@ -18,18 +17,15 @@
   object-fit: cover;
   max-width: 100%;
 }
-
 /* list clean */
 ul,
 ol {
   list-style: none;
 }
-
 /* anchor tag clean */
 a {
   text-decoration: none;
 }
-
 // header scss start
 .bg-custom {
   background-color: #373737;
@@ -237,7 +233,6 @@ a {
       margin-bottom: 25px;
     }
   }
-
   // Background Images
   .bg-led {
     background-image: url('/public/images/bg-1.png');
@@ -257,7 +252,6 @@ a {
 }
 
 //  carbon-system scss start
-
 .carbon-system {
   .feature-list-one {
     li {
@@ -331,9 +325,7 @@ a {
     }
   }
 }
-
 // proven components scss start
-
 .proven-component {
   .component {
     img {
@@ -346,9 +338,7 @@ a {
     }
   }
 }
-
 // newsletter-section scss start
-
 .newsletter-section {
   .newsletter-box {
     display: flex;
@@ -367,7 +357,6 @@ a {
       font-weight: 600;
       margin-bottom: 5px;
     }
-
     p {
       font-size: 16px;
       line-height: 20px;
@@ -375,11 +364,9 @@ a {
       margin: 0;
     }
   }
-
   .newsletter-form {
     flex: 1;
     display: flex;
-
     .input-group {
       display: flex;
       align-items: center;
@@ -407,24 +394,155 @@ a {
         font-weight: var.$font-weight-regular;
       }
     }
-
     .mail-icon {
       position: absolute;
       right: 110px;
       width: 16px;
       height: 16px;
-      opacity: 0.8;
     }
+  }
+}
 
-    button {
-      background-color: #ffcd00;
-      color: #000;
-      border: none;
-      border-radius: 8px;
-      padding: 10px 20px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.3s;
+// chat support section scss start
+.chat-support {
+  h2 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: var.$font-weight-bold;
+    width: 40%;
+    margin: auto;
+  }
+  p {
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: var.$font-weight-medium;
+  }
+  .custom-size {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: var.$font-weight-regular;
+  }
+  .custom-size-two {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: var.$font-weight-bold;
+  }
+}
+
+// faq section scss start
+.faq-section {
+  padding: 60px 0;
+  background: transparent;
+
+  .faq-container {
+    width: 1040px;
+    height: 488px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: var.$font-size-base;
+      font-weight: var.$font-weight-extrabold;
+      line-height: 52px;
     }
+    .accordion {
+      .accordion-item {
+        border: none;
+        margin-bottom: 14px;
+
+        .accordion-button {
+          background: transparent;
+          color: #fff;
+          font-size: 21px;
+          line-height: 32px;
+          font-weight: var.$font-weight-medium;
+          box-shadow: none;
+          padding: 16px 20px;
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background: rgba(255, 255, 255, 0.05);
+          }
+
+          &::after {
+            display: none;
+          }
+          .icon {
+            display: inline-block;
+            width: 16px;
+            height: 10px;
+            margin-right: 12px;
+            background: url('/public/icons/Vector.png') no-repeat center center;
+            background-size: contain;
+            transition: transform 0.3s ease;
+          }
+
+          &:not(.collapsed) .icon {
+            transform: rotate(180deg);
+          }
+        }
+        .accordion-body {
+          color: #ffc107;
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: var.$font-weight-regular;
+          padding-top: 10px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+// order section two scss start
+.order-section-two {
+  h2 {
+    font-size: var.$font-size-base;
+    font-weight: var.$font-weight-extrabold;
+    line-height: 52px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: var.$font-weight-bold;
+  }
+}
+// footer scss start
+.footer-section {
+  .footer-logo-img {
+    width: 169px;
+    height: 55px;
+  }
+  .footer-links {
+    a {
+      color: #ffcc00;
+      font-size: 16px;
+      font-weight: var.$font-weight-bold;
+      line-height: 20px;
+      padding: 0px 30px;
+      position: relative;
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-image: url('/public/icons/Button.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:last-child::after {
+        content: '';
+      }
+    }
+  }
+  p {
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: var.$font-weight-medium;
   }
 }
