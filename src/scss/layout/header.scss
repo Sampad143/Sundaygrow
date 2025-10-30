@@ -206,8 +206,7 @@ a {
 // advanced-tech scss start
 
 .advanced-tech {
-
-  h2{
+  h2 {
     font-size: var.$font-size-base;
     font-weight: var.$font-weight-extrabold;
     line-height: 52px;
@@ -221,12 +220,12 @@ a {
     transition: 0.3s;
     color: #fff;
     text-align: left;
-    h2{
+    h2 {
       font-size: 24px;
       font-weight: var.$font-weight-bold;
       line-height: 32px;
     }
-    p{
+    p {
       font-size: 21px;
       line-height: 32px;
       font-weight: var.$font-weight-medium;
@@ -235,24 +234,197 @@ a {
     .icon {
       width: 80px;
       height: 80px;
-     margin-bottom: 25px;
+      margin-bottom: 25px;
     }
   }
 
   // Background Images
   .bg-led {
-    background-image: url("/public/images/bg-1.png");
+    background-image: url('/public/images/bg-1.png');
   }
 
   .bg-climate {
-    background-image: url("/public/images/bg-2.png");
+    background-image: url('/public/images/bg-2.png');
   }
 
   .bg-irrigation {
-    background-image: url("/public/images/bg-3.png");
+    background-image: url('/public/images/bg-3.png');
   }
 
   .bg-app {
-    background-image: url("/public/images/bg-4.png");
+    background-image: url('/public/images/bg-4.png');
+  }
+}
+
+//  carbon-system scss start
+
+.carbon-system {
+  .feature-list-one {
+    li {
+      position: relative;
+      padding-left: 1.5rem;
+      color: #bdbdbd;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: var.$font-weight-regular;
+      margin-bottom: 32px;
+
+      &::before {
+        content: '•';
+        color: #ffcc00;
+        position: absolute;
+        left: 5px;
+        top: 0;
+        font-size: 21px;
+        line-height: 1;
+      }
+
+      strong {
+        display: block;
+        color: #fff;
+        font-size: 21px;
+        line-height: 32px;
+        font-weight: var.$font-weight-bold;
+        margin-bottom: 3px;
+      }
+      .small-img {
+        width: 346px;
+        height: 492px;
+      }
+    }
+  }
+  .feature-list-two {
+    p {
+      font-size: 21px;
+      line-height: 32px;
+      font-weight: var.$font-weight-bold;
+      text-align: left;
+      margin-left: 72px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 67px;
+
+      &::before {
+        content: '•';
+        color: #bdbdbd;
+        position: absolute;
+        left: 47px;
+        top: 3px;
+        font-size: 16px;
+        line-height: 1;
+      }
+
+      strong {
+        display: block;
+        color: #bdbdbd;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: var.$font-weight-regular;
+        margin-bottom: 16px;
+      }
+    }
+    .small-img-two img {
+      width: 235px;
+      height: 130px;
+    }
+  }
+}
+
+// proven components scss start
+
+.proven-component {
+  .component {
+    img {
+      gap: 134px;
+    }
+    h2 {
+      font-size: 27px;
+      line-height: 36px;
+      font-weight: var.$font-weight-bold;
+    }
+  }
+}
+
+// newsletter-section scss start
+
+.newsletter-section {
+  .newsletter-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: #373737;
+    padding: 40px 40px;
+    flex-wrap: wrap;
+  }
+
+  .text-content {
+    flex: 1;
+
+    h5 {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      font-family: var.$font-weight-regular;
+      margin: 0;
+    }
+  }
+
+  .newsletter-form {
+    flex: 1;
+    display: flex;
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: #1c1c1c;
+      border-radius: 8px;
+      width: 519px;
+      height: 48px;
+    }
+
+    input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 10px 40px 10px 12px;
+      font-size: 14px;
+      border-radius: 8px;
+
+      &::placeholder {
+        color: #bdbdbd;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: var.$font-weight-regular;
+      }
+    }
+
+    .mail-icon {
+      position: absolute;
+      right: 110px;
+      width: 16px;
+      height: 16px;
+      opacity: 0.8;
+    }
+
+    button {
+      background-color: #ffcd00;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
   }
 }
