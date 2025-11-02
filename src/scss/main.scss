@@ -6,7 +6,7 @@
 // Bootstrap override & import
 @use "bootstrap" with (
   $container-max-widths: (
-    sm: 540px,
+    sm: 390px,
     md: 720px,
     lg: 960px,
     xl: 1200px,
@@ -16,6 +16,8 @@
 
 // Pages / Layout
 @import './layout/header.scss';
+
+
 
 // Body style
 body {
@@ -57,3 +59,5 @@ body {
   object-fit: cover;
   max-width: 100%;
 }
+
+
