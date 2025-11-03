@@ -204,14 +204,7 @@ a {
     font-weight: var.$font-weight-bold;
     margin: 0;
   }
-
-
-
-
-
-
 }
-
 
 // advanced-tech scss start
 .advanced-tech {
@@ -270,18 +263,24 @@ a {
   }
 
   // Background Images
-  .bg-led { background-image: url('/public/images/bg-1.png'); }
-  .bg-climate { background-image: url('/public/images/bg-2.png'); }
-  .bg-irrigation { background-image: url('/public/images/bg-3.png'); }
-  .bg-app { background-image: url('/public/images/bg-4.png'); }
+  .bg-led {
+    background-image: url('/public/images/bg-1.png');
+  }
+  .bg-climate {
+    background-image: url('/public/images/bg-2.png');
+  }
+  .bg-irrigation {
+    background-image: url('/public/images/bg-3.png');
+  }
+  .bg-app {
+    background-image: url('/public/images/bg-4.png');
+  }
 }
-
-
 
 //  carbon-system scss start
 .carbon-system {
-  .background-color{
-     background-color: #1C1C1C;
+  .background-color {
+    background-color: #1c1c1c;
   }
 
   .feature-list-one {
@@ -362,8 +361,8 @@ a {
 // proven components scss start
 .proven-component {
   .component {
-    background-color: #1C1C1C;
-    padding:40px 0px ;
+    background-color: #1c1c1c;
+    padding: 40px 0px;
     img {
       gap: 134px;
     }
@@ -466,7 +465,7 @@ a {
   }
 
   .item {
-    background-color: #1C1C1C;
+    background-color: #1c1c1c;
     padding: 48px 24px;
     height: 188px;
 
@@ -488,14 +487,9 @@ a {
       line-height: 20px;
       font-weight: var.$font-weight-regular;
     }
-
   }
 }
-
-
-
-
-
+// faq scss start
 
 .faq-section {
   padding: 60px 0;
@@ -572,8 +566,8 @@ a {
 // order section two scss start
 .order-section-two {
   text-align: center;
- padding-top: 210px;
- padding-bottom: 80px;
+  padding-top: 230px;
+  padding-bottom: 80px;
 
   h2 {
     font-size: 47px;
@@ -587,7 +581,6 @@ a {
     line-height: 20px;
     font-weight: var.$font-weight-bold;
     margin-bottom: 48px;
-
   }
 }
 
@@ -1055,7 +1048,5 @@ a {
     }
   }
 }
-
-
 
 // order section
