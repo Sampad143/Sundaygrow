@@ -186,73 +186,104 @@ a {
 
   .order-content {
     max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
+
   h2 {
     font-size: var.$font-size-base;
     font-weight: var.$font-weight-extrabold;
     line-height: 52px;
+    margin: 0;
   }
+
   p {
     font-size: 16px;
     line-height: 20px;
     font-weight: var.$font-weight-bold;
+    margin: 0;
   }
+
+
+
+
+
+
 }
 
-// advanced-tech scss start
 
+// advanced-tech scss start
 .advanced-tech {
+  padding: 80px 0;
+
   h2 {
     font-size: var.$font-size-base;
     font-weight: var.$font-weight-extrabold;
     line-height: 52px;
+    text-align: center;
+    margin-bottom: 60px;
   }
+
   .tech-card {
     background-size: cover;
     background-position: center;
-    padding: 1.5rem;
-    min-height: 250px;
+    margin: 15px auto;
+    width: 100%;
+    max-width: 700px;
+    min-height: 368px;
+    padding: 50px;
     position: relative;
-    transition: 0.3s;
-    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     text-align: left;
-    h2 {
-      font-size: 24px;
-      font-weight: var.$font-weight-bold;
-      line-height: 32px;
-    }
-    p {
-      font-size: 21px;
-      line-height: 32px;
-      font-weight: var.$font-weight-medium;
-    }
 
     .icon {
       width: 80px;
       height: 80px;
       margin-bottom: 25px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
+    h5 {
+      font-size: 21px;
+      font-weight: var.$font-weight-bold;
+      line-height: 32px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 21px;
+      line-height: 32px;
+      font-weight: var.$font-weight-medium;
+      margin-bottom: 0;
     }
   }
+
   // Background Images
-  .bg-led {
-    background-image: url('/public/images/bg-1.png');
-  }
-
-  .bg-climate {
-    background-image: url('/public/images/bg-2.png');
-  }
-
-  .bg-irrigation {
-    background-image: url('/public/images/bg-3.png');
-  }
-
-  .bg-app {
-    background-image: url('/public/images/bg-4.png');
-  }
+  .bg-led { background-image: url('/public/images/bg-1.png'); }
+  .bg-climate { background-image: url('/public/images/bg-2.png'); }
+  .bg-irrigation { background-image: url('/public/images/bg-3.png'); }
+  .bg-app { background-image: url('/public/images/bg-4.png'); }
 }
+
+
 
 //  carbon-system scss start
 .carbon-system {
+  .background-color{
+     background-color: #1C1C1C;
+  }
+
   .feature-list-one {
     li {
       position: relative;
@@ -261,7 +292,7 @@ a {
       font-size: 16px;
       line-height: 20px;
       font-weight: var.$font-weight-regular;
-      margin-bottom: 32px;
+      margin-bottom: 36px;
 
       &::before {
         content: '•';
@@ -288,6 +319,8 @@ a {
     }
   }
   .feature-list-two {
+    margin-left: -35px;
+
     p {
       font-size: 21px;
       line-height: 32px;
@@ -321,13 +354,16 @@ a {
     }
     .small-img-two img {
       width: 235px;
-      height: 130px;
+      height: 90px;
+      margin-left: 20px;
     }
   }
 }
 // proven components scss start
 .proven-component {
   .component {
+    background-color: #1C1C1C;
+    padding:40px 0px ;
     img {
       gap: 134px;
     }
@@ -405,31 +441,62 @@ a {
 
 // chat support section scss start
 .chat-support {
+  text-align: center;
+  color: #fff;
+
+  img {
+    width: 152px;
+    height: 105px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
   h2 {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 27px;
+    line-height: 36px;
     font-weight: var.$font-weight-bold;
-    width: 40%;
-    margin: auto;
+    margin-bottom: 20px;
   }
+
   p {
-    font-size: 21px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: var.$font-weight-medium;
+    margin-bottom: 30px;
   }
-  .custom-size {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: var.$font-weight-regular;
-  }
-  .custom-size-two {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: var.$font-weight-bold;
+
+  .item {
+    background-color: #1C1C1C;
+    padding: 48px 24px;
+    height: 188px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h3 {
+      font-size: 27px;
+      line-height: 36px;
+      font-weight: var.$font-weight-bold;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: var.$font-weight-regular;
+    }
+
   }
 }
 
-// faq section scss start
+
+
+
+
+
 .faq-section {
   padding: 60px 0;
   background: transparent;
@@ -444,37 +511,38 @@ a {
       font-weight: var.$font-weight-extrabold;
       line-height: 52px;
     }
+
     .accordion {
       .accordion-item {
         border: none;
         margin-bottom: 14px;
+        overflow: hidden;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.05);
 
         .accordion-button {
-          background: transparent;
+          background: rgba(255, 255, 255, 0.05);
           color: #fff;
           font-size: 21px;
           line-height: 32px;
           font-weight: var.$font-weight-medium;
           box-shadow: none;
           padding: 16px 20px;
-          border-radius: 12px;
           display: flex;
           align-items: center;
+          border: none;
           transition: all 0.3s ease;
-
-          &:hover {
-            background: rgba(255, 255, 255, 0.05);
-          }
 
           &::after {
             display: none;
           }
+
           .icon {
             display: inline-block;
-            width: 15px;
-            height: 7.5px;
+            width: 56px;
+            height: 56px;
             margin-right: 32px;
-            background: url('/public/icons/Vector.png') no-repeat center center;
+            background: url('/public/icons/icon-2.png') no-repeat center center;
             background-size: contain;
             transition: transform 0.3s ease;
           }
@@ -482,32 +550,47 @@ a {
           &:not(.collapsed) .icon {
             transform: rotate(180deg);
           }
+
+          &:not(.collapsed) {
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+          }
         }
+
         .accordion-body {
-          color: #ffc107;
+          background: rgba(255, 255, 255, 0.05); // same bg as question
           font-size: 16px;
           line-height: 20px;
           font-weight: var.$font-weight-regular;
-          padding-top: 10px;
-          margin-left: 48px;
+          padding: 15px 20px 20px 110px;
         }
       }
     }
   }
 }
+
 // order section two scss start
 .order-section-two {
+  text-align: center;
+ padding-top: 210px;
+ padding-bottom: 80px;
+
   h2 {
-    font-size: var.$font-size-base;
-    font-weight: var.$font-weight-extrabold;
+    font-size: 47px;
     line-height: 52px;
+    font-weight: var.$font-weight-extrabold;
+    margin-bottom: 16px;
   }
+
   p {
     font-size: 16px;
-    line-height: 16px;
+    line-height: 20px;
     font-weight: var.$font-weight-bold;
+    margin-bottom: 48px;
+
   }
 }
+
 // footer scss start
 .footer-section {
   .footer-logo-img {
@@ -824,14 +907,14 @@ a {
 
 // carbon-system
 
-@media (max-width: 1400px) {
-  .carbon-system .small-img {
-    width: 230px;
-  }
-  .carbon-system .small-img-two {
-    width: 180px;
-  }
-}
+// @media (max-width: 1440px) {
+//   .carbon-system .small-img {
+//     width: 230px;
+//   }
+//   .carbon-system .small-img-two {
+//     width: 180px;
+//   }
+// }
 
 @media (max-width: 992px) {
   .carbon-system {
@@ -972,78 +1055,7 @@ a {
     }
   }
 }
-// faq section
 
-@media (max-width: 576px) {
-  .faq-section {
-    padding: 60px 0;
 
-    h2 {
-      font-size: 28px;
-    }
-
-    .accordion-button {
-      font-size: 16px;
-      padding: 15px 0;
-    }
-
-    .accordion-body {
-      font-size: 14px;
-      padding-left: 32px;
-    }
-  }
-}
 
 // order section
-
-.order-section-two {
-  text-align: center;
-  padding: 80px 0;
-
-  h2 {
-    font-size: 40px;
-    margin-bottom: 16px;
-
-    @media (max-width: 1200px) {
-      font-size: 36px;
-    }
-
-    @media (max-width: 992px) {
-      font-size: 32px;
-    }
-
-    @media (max-width: 768px) {
-      font-size: 28px;
-    }
-
-    @media (max-width: 576px) {
-      font-size: 24px;
-    }
-  }
-
-  p {
-    font-size: 19px;
-    margin-bottom: 48px;
-
-    @media (max-width: 768px) {
-      font-size: 16px;
-      margin-bottom: 32px;
-    }
-
-    @media (max-width: 576px) {
-      font-size: 14px;
-      margin-bottom: 24px;
-    }
-  }
-
-  .custom-btn {
-    display: inline-block;
-    padding: 12px 32px;
-    font-size: 16px;
-
-    @media (max-width: 576px) {
-      padding: 10px 24px;
-      font-size: 14px;
-    }
-  }
-}
