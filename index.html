@@ -7,21 +7,27 @@
   <title>Sundaygrow</title>
   <!-- Favicon -->
   <link rel="icon" href="/public/favicon.ico/favicon-32x32.png" type="favicon">
+  <style>
+   img {
+    width: 100px;
+    height: auto;
+   }
+  </style>
 
 </head>
 
 <body>
 
-  <!-- header start  -->
+
   <nav class=" bg-custom">
     <div class="container-xxl d-flex justify-content-between align-items-center">
 
-      <!-- Logo -->
+
       <a href="#" class="navbar-brand d-flex align-items-center">
         <img src="/public/images/logo.png" alt="Shop Logo">
       </a>
 
-      <!-- Subscribe + Button -->
+
       <div class="subscribe-item d-flex align-items-center ">
         <span class="subscribe d-none d-sm-block">Subscribe</span>
         <div class="header-btn d-none d-sm-block">Shop</div>
@@ -48,80 +54,89 @@
     </div>
   </div>
 
-  <!-- Product Highlights start -->
-  <div class="Product custom-padding ">
-    <div class="container-xxl d-flex Product-margin">
-      <div class="col-5">
-        <div class="product-image ">
-          <img src="./src/assets/images/Product.jpg" alt="">
+
+  <!-- Product Highlights Section Start -->
+<section class="product-section custom-padding">
+  <div class="container-xxl">
+
+    <!-- Product Item One -->
+    <div class="row align-items-start mb-5 product-item">
+      <!-- Left image -->
+      <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+        <div class="product-image text-center text-lg-start">
+          <img src="./src/assets/images/h.png" alt="Hassle-free growth" class="img-fluid">
         </div>
       </div>
-      <div class="col-7">
-        <div class="product-content text-start">
-          <h2 class="text-white mt-5 "><span class="text-warning">Hassle-free</span> cannabis growth with automated
-            controls.</h2>
-        </div>
+      <!-- Right content -->
+      <div class="col-lg-7 col-md-6 text-start left-content">
+        <h2 class="text-white mt-4">
+          <span class="text-warning">Hassle-free</span> cannabis growth with automated controls.
+        </h2>
       </div>
     </div>
-  </div>
 
-  <!-- product-item-two -->
+    <!-- Product Item Two -->
 
-  <div class="Product custom-padding ">
-    <div class="container-xxl d-flex flex-row-reverse item-tow">
-      <div class="col-4">
-        <div class="product-image">
-          <img src="./src/assets/images/product-2.jpg" alt="">
-        </div>
-      </div>
-      <div class="col-8">
-        <div class="product-content text-end">
-          <h2 class="text-white mt-5 product-left"> Grow top quality
-            cannabis for less than <span class="text-warning">€1 per gram</span></h2>
-        </div>
-      </div>
+<div class="row align-items-start mb-5 product-item flex-row-reverse">
+  <!-- right image -->
+  <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+    <div class="product-image text-center text-lg-end">
+      <img src="./src/assets/images/h.png" alt="Hassle-free growth" class="img-fluid">
     </div>
   </div>
-  <!-- product-item-three -->
-
-  <div class="Product custom-padding ">
-    <div class="container-xxl d-flex item-tow">
-      <div class="col-4">
-        <div class="product-image">
-          <img src="./src/assets/images/product-3.png" alt="">
+  <!-- Right content -->
+  <div class="col-lg-7  col-md-6 text-end ">
+    <h2 class="text-white mt-4 ms-5">
+      Grow top quality cannabis for less than <span class="text-warning"> €1 per gram</span>
+    </h2>
+  </div>
+</div>
+    <!-- Product Item Three -->
+    <div class="row align-items-start mb-5 product-item">
+      <!-- Left image -->
+      <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+        <div class="product-image text-center text-lg-start">
+          <img src="./src/assets/images/h.png" alt="Hassle-free growth">
         </div>
       </div>
-      <div class="col-8">
-        <div class="product-content text-start">
-          <h2 class="text-white mt-5 product-right product-right-tow">
-            <span class="text-warning">State-of-the-art wooden furniture</span>
-            with a built-in child safety lock for peace of mind.
-          </h2>
-
-        </div>
-        <img class="product-right mt-5" src="./src/assets/images/Frame 1000002398.png" alt="">
+      <!-- Right content -->
+      <div class="col-lg-7 col-md-6 text-start right-content">
+        <h2 class="text-white mt-4">
+       <span class="text-warning">State-of-the-art wooden furniture </span>with a built-in child safety lock for peace of mind.
+        </h2>
+        <img class="mt-4" src="./src/assets/images/Frame 1000002398.png" alt="">
       </div>
     </div>
+
   </div>
+</section>
+
+
 
   <!-- Gallery section start  -->
-<section class="gallery pb-5">
+<section class="gallery py-5">
   <div class="container-xxl">
-    <div class="gallery-row">
-      <div class="small-images-left">
-        <img src="./src/assets/images/gallery1.jpg" alt="">
-        <img src="./src/assets/images/gallery2.jpg" alt="">
-      </div>
 
-      <div class="center-image">
-        <img src="./src/assets/images/gallery3.jpg" alt="">
-      </div>
+    <div class="row">
 
-      <div class="small-images-right">
-        <img src="./src/assets/images/gallery4.png" alt="">
-        <img src="./src/assets/images/gallery5.jpg" alt="">
+     <div class="col-12">
+      <div class="d-flex flex-column flex-md-row gallery-wrapper">
+        <div class="left-side d-flex flex-md-column flex-row justify-content-between gap-4">
+            <img src="/src/assets/images/1.png" alt="">
+            <img src="/src/assets/images/2.png" alt="">
+        </div>
+        <div class="center-image">
+          <img src="/src/assets/images/3.png" alt="">
+        </div>
+
+        <div class="right-sided d-flex flex-md-column flex-row justify-content-between gap-4">
+          <img src="/src/assets/images/5.png" alt="">
+          <img src="/src/assets/images/4.png" alt="">
+        </div>
       </div>
-    </div>
+     </div>
+
+  </div>
   </div>
 </section>
 
@@ -130,40 +145,33 @@
 
 
 
+
+
   <!-- favorite strain section start -->
-
-  <section class="gstrain-section py-5">
-    <div class="container-xxl text-center custom-bg">
-      <div class="tittle mb-5">
-        <h2 class="text-white">
-          Grow your favorite strain in
-          <span class="text-warning">3 simple steps</span>
-        </h2>
-      </div>
-      <div class="row  coustom-width">
-        <!-- Step 1 -->
-        <div class="col-4 ">
-          <div class="step-circle d-flex justify-content-center align-items-center bg-warning text-dark">1</div>
-          <p class="step-text text-white">Connect the box through the app</p>
-        </div>
-        <!-- Step 2 -->
-        <div class="col-4 ">
-          <div class="step-circle step-circle d-flex justify-content-center align-items-center bg-warning text-dark">2
-          </div>
-          <p class="step-text text-white">Plant your seed or clone</p>
-        </div>
-        <!-- Step 3 -->
-        <div class="col-4">
-          <div class="step-circle step-circle d-flex justify-content-center align-items-center bg-warning text-dark ">3
-          </div>
-          <p class="step-text text-white">
-            Get real-time alerts as your plant blossoms to harvest
-          </p>
-        </div>
-      </div>
-
+<section class="gstrain-section py-5">
+  <div class="container-xxl text-center custom-bg">
+    <div class="tittle mb-5">
+      <h2 class="text-white"> Grow your favorite strain in <span class="text-warning">3 simple steps</span> </h2>
     </div>
-  </section>
+    <div class="row coustom-width"> <!-- Step 1 -->
+      <div class="col-4 ">
+        <div class="step-circle d-flex justify-content-center align-items-center bg-warning text-dark">1</div>
+        <p class="step-text text-white">Connect the box through the app</p>
+      </div> <!-- Step 2 -->
+      <div class="col-4 ">
+        <div class="step-circle step-circle d-flex justify-content-center align-items-center bg-warning text-dark">2
+        </div>
+        <p class="step-text text-white">Plant your seed or clone</p>
+      </div> <!-- Step 3 -->
+      <div class="col-4">
+        <div class="step-circle step-circle d-flex justify-content-center align-items-center bg-warning text-dark ">3
+        </div>
+        <p class="step-text text-white"> Get real-time alerts as your plant blossoms to harvest </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- order now section -->
   <div class="container-xxl py-5 gx-0">
@@ -307,30 +315,33 @@
 
   <!-- newsletter-section start -->
 
-  <section class="newsletter-section py-5">
-    <div class="container-xxl py-5">
-      <div class="row">
-        <div class="newsletter-box">
+<section class="newsletter-section py-5">
+  <div class="container-xxl py-5">
+    <div class="row">
+      <div class="newsletter-box">
 
-          <!-- Left text -->
-          <div class="text-content">
-            <h5 class="text-warning">Stay Updated.</h5>
-            <p class="text-white">Join our mailing list for updates, tips, and special offers—only the good stuff!</p>
-          </div>
-
-          <!-- Right form -->
-          <form class="newsletter-form">
-            <div class="input-group p-1">
-              <input type="email" placeholder="Enter your email address" required>
-              <img class="text-end p-2" src="/public/icons/mail.png" alt="mail icon" class="mail-icon" />
-            </div>
-            <a href="#" class="custom-btn-two ms-4">join list</a>
-          </form>
-
+        <!-- Left text -->
+        <div class="text-content">
+          <h5 class="text-warning">Stay Updated.</h5>
+          <p class="text-white">
+            Join our mailing list for updates, tips, and special offers—only the good stuff!
+          </p>
         </div>
+
+        <!-- Right form -->
+        <form class="newsletter-form">
+          <div class="input-group p-1">
+            <input type="email" placeholder="Enter your email address" required>
+            <img src="/public/icons/mail.png" alt="mail icon" class="mail-icon" />
+          </div>
+          <a href="#" class="custom-btn-two ms-4">Join List</a>
+        </form>
+
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- chat support section start -->
 
@@ -396,7 +407,7 @@
 
 
   <!-- faq section start -->
-  <section class="faq-section text-white py-5">
+  <!-- <section class="faq-section text-white py-5">
     <div class="container-xxl faq-container">
    <div class="row">
       <h2 class="text-center mb-5">FAQ</h2>
@@ -481,7 +492,7 @@
       </div>
    </div>
     </div>
-  </section>
+  </section> -->
 
 
   <!-- order section start -->
